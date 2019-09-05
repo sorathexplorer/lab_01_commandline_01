@@ -32,8 +32,12 @@ If it doesn't start at #1 again, or ask for help before moving on!
 Copy and paste the output of pwd below.
 ----------
 
-
-
+v120-ent-011:Desktop student$ mkdir MTEC1003
+v120-ent-011:Desktop student$ pwd
+/Users/student/Desktop
+v120-ent-011:Desktop student$ cd MTEC1003
+v120-ent-011:MTEC1003 student$ pwd
+/Users/student/Desktop/MTEC1003
 ==========
 5. Type:
 
@@ -42,8 +46,9 @@ $ ls
 
 Copy and paste the output below.
 ----------
-
-
+v120-ent-011:MTEC1003 student$ mkdir Animals
+v120-ent-011:MTEC1003 student$ ls
+Animals
 
 ==========
 6. Type:
@@ -54,7 +59,9 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
+v120-ent-011:MTEC1003 student$ mkdir food
+v120-ent-011:MTEC1003 student$ ls
+Animals	food
 
 ==========
 7. Type:
@@ -65,8 +72,8 @@ $ ls
 Copy and paste the output below.
 ----------
 
-
-
+v120-ent-011:MTEC1003 student$ mkdir -p foo/bar/baz/qux
+v120-ent-011:MTEC1003 student$ ls
 ==========
 8. Type:
 
@@ -76,8 +83,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-
+v120-ent-011:MTEC1003 student$ cd foo/bar/baz/qux
 ==========
 9. Type:
 
@@ -87,8 +93,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-
+v120-ent-011:qux student$ cd ../..
 ==========
 10. Type:
 
@@ -98,8 +103,8 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
- 
+v120-ent-011:bar student$ cd -
+/Users/student/Desktop/MTEC1003/foo/bar/baz/qux 
 ==========
 11. Type:
 
@@ -109,8 +114,7 @@ $ pwd
 Copy and paste the output below.
 ----------
 
-
-
+v120-ent-011:qux student$ cd ../../../..
 ==========
 12. Type:
 
@@ -121,8 +125,14 @@ $ ls -l
 Copy and paste the first two lines from the output into the space below.
 ----------
 
-
-
+v120-ent-011:MTEC1003 student$ ls -l
+total 0
+drwxr-xr-x  2 student  staff   68 Sep  4 19:46 Animals
+drwxr-xr-x  3 student  staff  102 Sep  4 19:48 foo
+drwxr-xr-x  2 student  staff   68 Sep  4 19:48 food
+v120-ent-011:MTEC1003 student$ rmdir animals
+v120-ent-011:MTEC1003 student$ ls
+foo	food
 ==========
 13. Type:
 
@@ -132,8 +142,9 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
-
+v120-ent-011:MTEC1003 student$ cd ~
+v120-ent-011:~ student$ pwd
+/Users/student
 ==========
 14. Type:
 
@@ -143,8 +154,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
-
+v120-ent-011:~ student$ cd /Volumes
+v120-ent-011:Volumes student$ 
 ==========
 15. Type:
 
@@ -154,7 +165,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
+v120-ent-011:Volumes student$ cd /unknown_folder
+-bash: cd: /unknown_folder: No such file or directory
 
 ==========
 15. Type:
@@ -165,8 +177,8 @@ $ pwd
 Copy and paste the output into the space below.
 ----------
 
-
-
+v120-ent-011:Volumes student$ cd ~/mtec1003
+-bash: cd: /Users/student/mtec1003: No such file or directory
 ==========
 16. Type:
 
@@ -175,13 +187,13 @@ $ hostname
 Copy and paste the output into the space below.
 ----------
 
-
-
+v120-ent-011:Volumes student$ hostname
+v120-ent-011.local
 ==========
 17a. Make sure you're back in your mtec1002, which should be in your home folder.  What command would you use to find out if you're in the right folder?  Write the command below, then run it.
 ----------
 
-
+pwd
 
 ==========
 17b. If you're not in the right directory, type the following command:
