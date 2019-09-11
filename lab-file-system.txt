@@ -216,7 +216,7 @@ lemon
 Use only one command to make all of these new directories.  Write what command you used below:
 ----------
 
-
+mkdir -p /lemon/strawberry/orange/pineapple
 
 ==========
 19. Make another directory called aardvark.  
@@ -224,7 +224,7 @@ Use only one command to make all of these new directories.  Write what command y
 Write the command you used to create the directory below:
 ----------
 
-
+mkdir aardvark
 
 ==========
 20. List the files and directories in the current directory using the long format.  
